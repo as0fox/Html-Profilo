@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            border: 1px solid black;
+            width: 300px; 
+            margin: 0 auto; 
+            display: flex;
+            align-items: flex-start; 
+            gap: 10px; 
+        }
+        .box {
+            border: 1px solid black;
+            padding: 55px;
+            height: max-content;
+          
+            box-sizing: border-box; 
+        }
+        .col {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            width: 100%;
+        }
+        .item {
+            width: 100%; 
+        }
+        .mi {
+            width: 100px; 
+                height: 280px; 
+                display: flex;
+                align-items: center; 
+                justify-content: center; 
+                flex-direction: column; 
+        }
+        .con {
+                border: 1px solid black;
+                width: 200px;
+                margin: 0;
+            }
+            .box {
+                border: 1px solid black;
+                padding: 20px;
+                text-align: center;
+                margin: 5px;
+                
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .box_small {
+                width: 45%;
+            }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <table border="1px" >
+            
+            <tr>
+              <th>company</th>
+              <th>cont</th>
+              <th>country</th>
+            </tr>
+            <tr>
+              <td>Ahmad</td>
+              <td>Ahmad</td>
+              <td>Ahmad</td>
+              
+            </tr>
+            <tr>
+                <td>Ahmad</td>
+                <td>Ahmad</td>
+                <td>Ahmad</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        
+        
+        <h3>drinks table</h3>
+        <div class="con">
+            <div class="box">Drinks</div>
+            <div class="row">
+                <div class="box box_small">Coffee</div>
+                <div class="box box_small">Tea</div>
+            </div>
+        </div>
+        
+        <hr>
+        
+     
+        
+            <div class="cont">
+                <div class="box mi">Main Item</div>
+                <div class="col">
+                    <div class="box item">Item 1</div>
+                    <div class="box item">Item 2</div>
+                </div>
+            </div>
+            <hr>
+            <table border="1" style="width: 900px; height: 250px;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>shehab</td>
+                        <td rowspan="2">Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>mona</td>
+                    </tr>
+                    <tr>
+                        <td>mo3ad</td>
+                        <td>cs</td>
+                    </tr>
+                    <tr>
+                        
+                    
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td colspan="2">Merged Cell</td>
+                    </tr>
+                     
+                    <tr>
+                        <td>jbj</td>
+                        <td>Software Engineer</td>
+                    </tr>
+                  
+                    <tr>
+                        <td colspan="2">Merged Cell</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>jack</td>
+                        <td>spong boop</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                  <th rowspan="2">State of Health</th>
+                  <th colspan="2">Fasting Value</th>
+                  <th rowspan="2">After Eating<br>2 hours after eating</th>
+                </tr>
+                <tr>
+                  <th>Minimum</th>
+                  <th>Maximum</th>
+                </tr>
+                <tr>
+                  <td>Healthy</td>
+                  <td>70</td>
+                  <td>100</td>
+                  <td>Less than 140</td>
+                </tr>
+                <tr>
+                  <td>Pre-Diabetes</td>
+                  <td>101</td>
+                  <td>126</td>
+                  <td>140 to 200</td>
+                </tr>
+                <tr>
+                  <td>Diabetes</td>
+                  <td>More than 126</td>
+                  <td>N/A</td>
+                  <td>More than 200</td>
+                </tr>
+              </table>
+              <hr>
+              <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; table-layout: fixed;">
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td style="width: 20%;">
+                    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%;">
+                      <tr><td>5</td></tr>
+                      <tr><td>10</td></tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">11</td>
+                  <td colspan="3">13</td>
+                </tr>
+                <tr>
+                  <td colspan="3">16</td>
+                  <td colspan="2">19</td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="2">21</td>
+                  <td>23</td>
+                  <td colspan="2" rowspan="2"></td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="2">31</td>
+                  <td>33</td>
+                  <td rowspan="2">34</td>
+                  <td rowspan="2"></td>
+                </tr>
+                <tr>
+                  <td>38</td>
+                </tr>
+                <tr>
+                  <td colspan="2">46</td>
+                  <td>48</td>
+                  <td>48</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>51</td>
+                  <td rowspan="4">52</td>
+                  <td rowspan="2">53</td>
+                  <td rowspan="2">54</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>71</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>76</td>
+                  <td rowspan="2" colspan="2"></td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>81</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td colspan="2">86</td>
+                  <td>88</td>
+                  <td colspan="2">89</td>
+                </tr>
+              </table>
+              <hr>
+              <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                  <th>Animal</th>
+                  <th>Image</th>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Giraffe">Giraffe</a></td>
+                  <td><img src="taco.jpg" alt="Giraffe" /></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Tiger">Tiger</a></td>
+                  <td><img src="taco.jpg" alt="Tiger" /></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Fox">Fox</a></td>
+                  <td><img src="taco.jpg" alt="Fox" /></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Sheep">Sheep</a></td>
+                  <td><img src="sheep.jpg" alt="Sheep" /></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Dog">Dog</a></td>
+                  <td><img src="taco.jpg" alt="Dog" /></td>
+                </tr>
+              </table>
+              <hr>
+</body>
+</html>
